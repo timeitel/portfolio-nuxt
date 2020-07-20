@@ -1,10 +1,10 @@
 module.exports = {
   theme: {
     colors: {
-      primaryBlue: '#0069d9',
-      primaryDark: '#1D2027',
-      primaryWhite: '#C0C5CE',
-      primaryGrey: '#8FA1B3'
+      'c-blue': '#0069d9',
+      'c-dark': '#1D2027',
+      'c-white': '#C0C5CE',
+      'c-grey': '#8FA1B3'
     }
   },
   variants: {},
