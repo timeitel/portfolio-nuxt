@@ -39,6 +39,10 @@ export default Vue.extend({})
 @apply min-h-screen flex justify-center items-center text-center mx-auto;
 }
 */
+body {
+  background: #1D2027;
+}
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
