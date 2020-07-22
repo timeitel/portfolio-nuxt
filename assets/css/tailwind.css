@@ -1,3 +1,15 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.icon {
+  @apply fill-current text-c-grey mb-10 cursor-pointer;
+}
+
+.icon:hover {
+  @apply text-c-blue;
+}
+
+.c-transition {
+  @apply transition ease-out duration-300;
+}
