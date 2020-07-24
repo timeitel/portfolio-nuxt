@@ -1,10 +1,16 @@
 <template>
   <header>
     <nav class="p-5 flex justify-between items-center nav-container">
-      <span>Tim Eitel</span>
+      <a class="flex hover:text-c-blue" href="#">
+        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clip-rule="evenodd" /></svg>
+        <span>Tim Eitel</span>
+      </a>
       <div class="flex items-center">
-        <a class="mr-6" href="#">Resume</a>
-        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" /><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" /></svg>
+        <a class="mr-6 hover:text-c-blue" href="#">Resume</a>
+        <a class="p-1 hover:text-c-blue" href="#">
+          <svg class="h-6 w-6" fill="currentColor" view-box="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" /></svg>
+          </svg>
+        </a>
       </div>
     </nav>
   </header>
