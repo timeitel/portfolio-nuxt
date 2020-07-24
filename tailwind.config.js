@@ -2,10 +2,10 @@ module.exports = {
   theme: {
     colors: {
       'c-blue': '#0069d9',
-      'c-white': '#C0C5CE',
+      'c-white': '#ffffff',
       'c-grey': '#99a1a6',
       'c-dark': '#1b1d1f',
-      'c-black': '#0f1011'
+      'c-black': '#000000'
     }
   },
   variants: {},

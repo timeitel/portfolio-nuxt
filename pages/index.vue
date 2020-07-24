@@ -17,13 +17,17 @@ export default Vue.extend({
     FloatingLinks,
     FloatingEmail,
     TheLanding
+  },
+  head () {
+    return {
+      title: 'Tim Eitel | Software Engineer'
+    }
   }
 })
 </script>
 
 <style>
 :root {
-  --white: #c0c5ce;
   --dark: #1b1d1f;
   --black: #0f1011;
   --grey: #99a1a6;

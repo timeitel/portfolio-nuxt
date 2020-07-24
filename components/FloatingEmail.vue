@@ -1,8 +1,7 @@
 <template>
-  <div class="flex">
-    <a class="text-c-grey vertical-link hover:text-c-blue hidden md:flex md:items-center" href="#">More about me
-    </a>
-    <svg class="h-6 w-6 chevron fill-current text-c-black" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" /></svg>
+  <div class="side-container text-c-blue hidden lg:flex">
+    <a class="email-link text-c-grey hover:text-c-blue" href="#">timeitel@outlook.com</a>
+    <div class="vertical-divider" />
   </div>
 </template>
 
@@ -13,24 +12,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.vertical-link {
+.side-container {
+  bottom: 0;
+  right: 60px;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  width: 32px;
+  height: 304px;
+}
+
+.email-link {
   position: absolute;
-  bottom: 200px;
-  right: 0;
+  bottom: 240px;
+  right: -66px;
   transform: rotate(90deg);
 }
 
-.chevron {
+.vertical-divider {
+  border-left: 1px solid var(--grey);
+  height: 150px;
+  margin-top: 10px;
+  transform: translateX(45%);
   position: absolute;
   bottom: 0;
-}
-
-.vertical-link::after {
-  background: var(--black);
-  content: '';
-  display: inline-block;
-  height: 2px;
-  width: 4.5rem;
-  margin-left: 0.75rem;
 }
 </style>

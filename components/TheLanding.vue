@@ -1,18 +1,30 @@
 <template>
   <div class="landing">
-    <div class="landing__banner header text-c-black font-bold">
-      <h1><span>Hi there,</span></h1>
-      <h1>I'm</h1>
+    <the-navbar />
+    <div class="header-group">
+      <h2 class="header">
+        <span>Hi there,</span>
+      </h2>
+      <h2 class="header">
+        <span>I'm</span>
+      </h2>
     </div>
-    <div class="landing__banner sub-header text-c-white">
-      <p>Tim Eitel</p>
-      <p>Software Engineer</p>
-    </div>
+    <h2 class="landing__content">
+      <p class="sub-header text-c-white text-3xl md:text-5xl">
+        Tim Eitel | Software Engineer
+      </p>
+    </h2>
+    <a class="landing__button button" href="#">More</a>
   </div>
 </template>
 
 <script>
+import TheNavbar from '@/components/TheNavbar.vue'
+
 export default {
+  components: {
+    TheNavbar
+  }
 }
 </script>
 
@@ -20,20 +32,43 @@ export default {
 .landing {
   height: 100vh;
   width: 100vw;
-  position: relative;
-}
-
-.landing__banner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
 }
 
 .header {
-  font-size: 7.5rem;
+  font-weight: 700;
+  color: var(--black);
+  line-height: .9;
 }
 
-.sub-header {
-  font-size: 2.625rem;
+.header-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+
+  h2 {
+    font-size: 18vw;
+    position: relative;
+  }
+
+}
+
+.landing__content {
+  margin: 8vh 0;
+  font-weight: 200;
+}
+
+@media only screen and (min-width: 600px) {
+  .header-group {
+    h2 {
+      font-size: 7.5rem;
+    }
+
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  }
 }
 </style>
