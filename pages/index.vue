@@ -4,6 +4,8 @@
     <floating-links />
     <floating-email />
     <the-about />
+    <the-portfolio />
+    <the-contact />
   </div>
 </template>
 
@@ -13,13 +15,17 @@ import TheLanding from '@/components/TheLanding.vue'
 import FloatingLinks from '@/components/FloatingLinks.vue'
 import FloatingEmail from '@/components/FloatingEmail.vue'
 import TheAbout from '@/components/TheAbout.vue'
+import ThePortfolio from '@/components/ThePortfolio.vue'
+import TheContact from '@/components/TheContact.vue'
 
 export default Vue.extend({
   components: {
     FloatingLinks,
     FloatingEmail,
     TheLanding,
-    TheAbout
+    TheAbout,
+    ThePortfolio,
+    TheContact
   },
   head () {
     return {
@@ -40,6 +46,7 @@ export default Vue.extend({
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {

@@ -11,6 +11,7 @@
         <p class="text-c-grey-3">
           This is a long sentence that I practiced typing when I thought that I had taken a new stance on
         </p>
+        <a class="landing__button button self-center mt-5" href="#portfolio">Portfolio</a>
       </div>
     </section>
   </main>
