@@ -1,6 +1,6 @@
 <template>
   <div class="side-container text-c-blue hidden lg:flex">
-    <a class="email-link text-c-grey hover:text-c-blue" href="#">timeitel@outlook.com</a>
+    <a class="email-link text-c-grey-2 hover:text-c-blue" href="#">timeitel@outlook.com</a>
     <div class="vertical-divider" />
   </div>
 </template>
@@ -30,7 +30,7 @@ export default {
 }
 
 .vertical-divider {
-  border-left: 1px solid var(--grey);
+  border-left: 1px solid var(--grey-2);
   height: 150px;
   margin-top: 10px;
   transform: translateX(45%);

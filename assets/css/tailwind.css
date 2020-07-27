@@ -3,7 +3,7 @@
 @import 'tailwindcss/utilities';
 
 .icon {
-  @apply fill-current text-c-grey cursor-pointer;
+  @apply fill-current text-c-grey-2 cursor-pointer;
 }
 
 .icon:hover {

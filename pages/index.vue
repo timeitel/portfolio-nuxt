@@ -3,6 +3,7 @@
     <the-landing />
     <floating-links />
     <floating-email />
+    <the-about />
   </div>
 </template>
 
@@ -11,12 +12,14 @@ import Vue from 'vue'
 import TheLanding from '@/components/TheLanding.vue'
 import FloatingLinks from '@/components/FloatingLinks.vue'
 import FloatingEmail from '@/components/FloatingEmail.vue'
+import TheAbout from '@/components/TheAbout.vue'
 
 export default Vue.extend({
   components: {
     FloatingLinks,
     FloatingEmail,
-    TheLanding
+    TheLanding,
+    TheAbout
   },
   head () {
     return {
@@ -30,8 +33,13 @@ export default Vue.extend({
 :root {
   --dark: #1b1d1f;
   --black: #0f1011;
-  --grey: #99a1a6;
+  --grey-1: #e3e3e3;
+  --grey-2: #99a1a6;
   --blue: #0069d9,
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -43,8 +51,15 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.section__title {
+  font-weight: 700;
+  line-height: .9;
+  font-size: 4.5rem;
 }
 </style>

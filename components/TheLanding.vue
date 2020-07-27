@@ -14,7 +14,7 @@
         Tim Eitel | Software Engineer
       </p>
     </h2>
-    <a class="landing__button button" href="#">More</a>
+    <a class="landing__button button" href="#about-me">More</a>
   </div>
 </template>
 

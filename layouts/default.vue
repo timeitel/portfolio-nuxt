@@ -45,7 +45,7 @@ html {
   background-color: #3b8070;
 }
 
-.button--grey {
+.button--grey-2 {
   display: inline-block;
   border-radius: 4px;
   border: 1px solid #35495e;
